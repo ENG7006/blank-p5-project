@@ -1,37 +1,11 @@
-
-var car = {
-  x: 100,
-  y: 325,
-  width: 300,
-  height: 100,
-  hoodLength: 75,
-  cabinLength: 150,
-  draw: function () {
-    this.drawBody ();
-    this.drawCabin();
-    this.drawFrontWheel();
-    this.drawBackWheel();
-  },
-  drawBody: function () {
-    rect(this.x, this.y, this.width, this.height); // draw the car body
-  },
-  drawCabin: function () {
-    rect(this.x + this.hoodLength, this.y - this.hoodLength, this.cabinLength, this.hoodLength); // draw the car cabin
-  },
-  drawFrontWheel: function () {
-    ellipse(this.y, this.width + this.cabinLength, this.x / 2, this.height / 2); // draw the front wheel
-  },
-  drawBackWheel: function () {
-    ellipse(this.x + this.hoodLength, this.width + this.cabinLength, this.x / 2, this.height / 2); // draw the back wheel
-  },
-};
-
 function setup() {
   createCanvas(600, 600); // build canvas
-  car.draw();
 }
 
 function draw() {
+  rect(250, 350, 200, 200); // draw the first floor
+  triangle(220, 350, 480, 350, 350, 225); // draw the roof
+  rect(325, 450, 50, 100); // draw a door
+  rect(265, 375, 75, 50); // draw a window
+  rect(360, 375, 75, 50); // draw a second window
 }
-  //ellipse(175, 450, 50, 50); // draw back wheel
-  //ellipse(325, 450, 50, 50); // draw front wheel

@@ -3,10 +3,17 @@ function setup() {
 }
 
 function draw() {
-  triangle(250, 450, 450, 450, 350, 350); // draw base
-  ellipse(350, 250, 150, 300); // draw main part of rocket
-  triangle(293, 150, 407, 150, 350, 50); // draw top
-  ellipse(360, 200, 25, 25); // draw window
-  ellipse(360, 250, 25, 25); // draw window 2
-  ellipse(360, 300, 25, 25); // draw window 3
+  triangle(155, 350, 250, 400, 150, 450); // draw the shark tail
+  triangle(162, 360, 240, 400, 158, 440); // draw inside of shark's tail
+  ellipse(375, 400, 350, 100); // draw the shark body
+  triangle(340, 300, 340, 350, 420, 352); // draw the shark fin
+  ellipse(460, 390, 5, 5); // draw the eye
+  line(475, 420, 532, 420); // draw the mouth
+  triangle(475, 421, 485, 421, 480, 425); // draw a tooth
+  triangle(490, 421, 500, 421, 495, 425); // draw a tooth
+  triangle(505, 421, 515, 421, 510, 425); // draw a tooth
+  triangle(520, 421, 530, 421, 525, 425); // draw a tooth
+  ellipse(500, 300, 5, 5); // draw an air bubble
+  ellipse(510, 270, 5, 5); // draw an air bubble
+  ellipse(490, 240, 5, 5); // draw an air bubble
 }

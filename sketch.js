@@ -3,9 +3,13 @@ function setup() {
 }
 
 function draw() {
-  rect(250, 350, 200, 200); // draw the first floor
-  triangle(220, 350, 480, 350, 350, 225); // draw the roof
-  rect(325, 450, 50, 100); // draw a door
-  rect(265, 375, 75, 50); // draw a window
-  rect(360, 375, 75, 50); // draw a second window
+  ellipse(250, 400, 350, 100); // draw the car body
+  ellipse(100, 450, 50, 50); // draw back wheel
+  ellipse(100, 450, 30, 30); // draw back hubcap
+  ellipse(400, 450, 50, 50); // draw front wheel
+  ellipse(400, 450, 30, 30); // draw back hubcap
+  ellipse(431, 397, 10, 20); // draw headlight
+  rect(270, 360, 60, 75); // draw front door
+  rect(170, 360, 60, 75); // draw back door
+  ellipse(391, 351, 5, 45); // draw windshield
 }
